@@ -5,8 +5,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     ca-certificates \
-    bc \
-    jq \
     && rm -rf /var/lib/apt/lists/*
 
 # Create app directory
@@ -24,20 +22,16 @@ COPY genesis.json ./
 COPY start-railway.sh ./
 
 # Create password file
-RUN echo "xyberchain-railway-2024" > password.txt
+RUN echo "xyberchain-railway-2024" > password.txt && \
+    chmod +x ./start-railway.sh && \
+    mkdir -p ./data
 
-# Make executable
-RUN chmod +x ./start-railway.sh
+# Expose port
+EXPOSE $PORT
 
-# Create data directory
-RUN mkdir -p ./data
-
-# Initialize only (account import happens at runtime)
-RUN ./geth --datadir ./data init genesis.json
-
-# Expose ports
-EXPOSE 8545
-EXPOSE 8546
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+  CMD curl -f http://localhost:${PORT:-8545} || exit 1
 
 # Start
 CMD ["./start-railway.sh"]
