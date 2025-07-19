@@ -1,0 +1,92 @@
+nohup: ignoring input
+🚀 Starting XYBERCHAIN on port 8545
+Chain ID: 9194
+Currency: XYB
+INFO [07-19|10:47:54.037] Maximum peer count                       ETH=50 total=50
+INFO [07-19|10:47:54.044] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [07-19|10:47:54.045] Option "allow-insecure-unlock" is deprecated and has no effect
+WARN [07-19|10:47:54.064] Option --miner.etherbase is deprecated as the etherbase is set by the consensus client post-merge
+WARN [07-19|10:47:54.065] The flag --mine is deprecated and will be removed
+INFO [07-19|10:47:54.076] Set global gas cap                       cap=50,000,000
+INFO [07-19|10:47:54.078] Initializing the KZG library             backend=gokzg
+INFO [07-19|10:47:54.114] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [07-19|10:47:54.117] Using pebble as the backing database
+INFO [07-19|10:47:54.117] Allocated cache and file handles         database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [07-19|10:47:55.997] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain readonly=false
+INFO [07-19|10:47:56.008] Opened Era store                         datadir=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain/era
+INFO [07-19|10:47:56.046] State scheme set to already existing     scheme=path
+INFO [07-19|10:47:56.092] Initialising Ethereum protocol           network=9194 dbversion=9
+INFO [07-19|10:47:56.210] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/state readonly=false
+INFO [07-19|10:47:56.241] Initialized path database                triecache=154.00MiB statecache=102.00MiB buffer=256.00MiB history="last 90000 blocks"
+INFO [07-19|10:47:56.635] 
+INFO [07-19|10:47:57.188] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [07-19|10:47:57.204] Chain ID:  1 (mainnet)
+INFO [07-19|10:47:57.204] Consensus: Beacon (proof-of-stake), merged from Ethash (proof-of-work)
+INFO [07-19|10:47:57.204] 
+INFO [07-19|10:47:57.204] Pre-Merge hard forks (block based):
+INFO [07-19|10:47:57.204]  - Homestead:                   #1150000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+INFO [07-19|10:47:57.204]  - DAO Fork:                    #1920000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/dao-fork.md)
+INFO [07-19|10:47:57.204]  - Tangerine Whistle (EIP 150): #2463000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+INFO [07-19|10:47:57.204]  - Spurious Dragon/1 (EIP 155): #2675000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [07-19|10:47:57.204]  - Spurious Dragon/2 (EIP 158): #2675000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [07-19|10:47:57.204]  - Byzantium:                   #4370000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+INFO [07-19|10:47:57.204]  - Constantinople:              #7280000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+INFO [07-19|10:47:57.204]  - Petersburg:                  #7280000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+INFO [07-19|10:47:57.204]  - Istanbul:                    #9069000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+INFO [07-19|10:47:57.204]  - Muir Glacier:                #9200000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/muir-glacier.md)
+INFO [07-19|10:47:57.204]  - Berlin:                      #12244000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+INFO [07-19|10:47:57.204]  - London:                      #12965000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+INFO [07-19|10:47:57.204]  - Arrow Glacier:               #13773000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/arrow-glacier.md)
+INFO [07-19|10:47:57.204]  - Gray Glacier:                #15050000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/gray-glacier.md)
+INFO [07-19|10:47:57.204] 
+INFO [07-19|10:47:57.204] Merge configured:
+INFO [07-19|10:47:57.204]  - Hard-fork specification:    https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+INFO [07-19|10:47:57.204]  - Network known to be merged
+INFO [07-19|10:47:57.204]  - Total terminal difficulty:  58750000000000000000000
+INFO [07-19|10:47:57.204] 
+INFO [07-19|10:47:57.204] Post-Merge hard forks (timestamp based):
+INFO [07-19|10:47:57.204]  - Shanghai:                    @1681338455 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+INFO [07-19|10:47:57.204]  - Cancun:                      @1710338135 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+INFO [07-19|10:47:57.204]  - Prague:                      @1746612311
+INFO [07-19|10:47:57.204] 
+INFO [07-19|10:47:57.204] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [07-19|10:47:57.204] 
+INFO [07-19|10:47:57.207] Loaded most recent local block           number=0 hash=d4e567..cb8fa3 age=56y4mo1w
+INFO [07-19|10:47:57.209] Initialized transaction indexer          range="last 2350000 blocks"
+INFO [07-19|10:47:57.451] Enabled snap sync                        head=0 hash=d4e567..cb8fa3
+INFO [07-19|10:47:57.453] Gasprice oracle is ignoring threshold set threshold=2
+WARN [07-19|10:47:57.457] Engine API enabled                       protocol=eth
+INFO [07-19|10:47:57.457] Starting peer-to-peer node               instance=Geth/v1.16.1-stable-12b4131f/linux-amd64/go1.24.4
+INFO [07-19|10:47:57.589] IPC endpoint opened                      url=/home/mbogw/xyberchain/railway-fixed/data/geth.ipc
+ERROR[07-19|10:47:57.590] Unavailable modules in HTTP API list     unavailable="[personal clique]" available="[admin debug web3 eth txpool miner net]"
+INFO [07-19|10:47:57.593] New local node record                    seq=1,752,910,886,469 id=96881b1b31e6fca5 ip=127.0.0.1 udp=0 tcp=30303
+INFO [07-19|10:47:57.593] Started P2P networking                   self="enode://6d5f772bd8c275c8b92f7fe7d9de210fb85e7ea623915e0467217ce7f975ac4b3d4011eedcfa6b3c127b5a3a8f70fa0e5d95f6be9fd5c520ca4193b38ed26f56@127.0.0.1:30303?discport=0"
+ERROR[07-19|10:47:57.602] Unavailable modules in HTTP API list     unavailable="[personal clique]" available="[admin debug web3 eth txpool miner net]"
+INFO [07-19|10:47:57.603] Loaded JWT secret file                   path=/home/mbogw/xyberchain/railway-fixed/data/geth/jwtsecret crc32=0xafbab493
+INFO [07-19|10:47:57.604] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
+INFO [07-19|10:47:57.605] WebSocket enabled                        url=ws://[::]:8546
+INFO [07-19|10:47:57.617] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [07-19|10:47:57.617] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+WARN [07-19|10:47:57.618] The "unlock" flag has been deprecated and has no effect
+INFO [07-19|10:47:57.619] Started log indexer
+WARN [07-19|10:48:32.700] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|10:52:26.073] Served eth_mining                        conn=[::1]:37234 reqid=1 duration="217.4µs" err="the method eth_mining does not exist/is not available"
+WARN [07-19|10:52:26.117] Served eth_hashrate                      conn=[::1]:37242 reqid=1 duration="10.5µs" err="the method eth_hashrate does not exist/is not available"
+WARN [07-19|10:53:33.131] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|10:58:33.174] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|11:03:34.025] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|11:05:28.180] Failed to get free disk space            path=/home/mbogw/xyberchain/railway-fixed/data/geth err="failed to call Statfs: no such file or directory"
+WARN [07-19|11:08:34.082] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|11:13:34.636] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|11:18:34.730] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+WARN [07-19|11:23:34.806] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain!
+INFO [07-19|11:25:25.098] Got interrupt, shutting down...
+INFO [07-19|11:25:25.113] HTTP server stopped                      endpoint=[::]:8545
+INFO [07-19|11:25:25.119] HTTP server stopped                      endpoint=[::]:8546
+INFO [07-19|11:25:25.120] HTTP server stopped                      endpoint=127.0.0.1:8551
+INFO [07-19|11:25:25.135] IPC endpoint closed                      url=/home/mbogw/xyberchain/railway-fixed/data/geth.ipc
+INFO [07-19|11:25:25.146] Ethereum protocol stopped
+INFO [07-19|11:25:25.149] Transaction pool stopped
+INFO [07-19|11:25:25.254] Persisting dirty state to disk           root=d7f897..0f0544 layers=0
+INFO [07-19|11:25:25.300] Persisted dirty state to disk            size=74.00B elapsed=44.080ms
+INFO [07-19|11:25:25.367] Blockchain stopped

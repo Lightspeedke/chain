@@ -1,0 +1,42 @@
+nohup: ignoring input
+🚀 Starting XYBERCHAIN
+=====================
+📦 Initializing blockchain...
+INFO [07-19|11:44:03.588] Maximum peer count                       ETH=50 total=50
+INFO [07-19|11:44:03.594] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [07-19|11:44:03.652] Set global gas cap                       cap=50,000,000
+INFO [07-19|11:44:03.654] Initializing the KZG library             backend=gokzg
+INFO [07-19|11:44:03.745] Defaulting to pebble as the backing database
+INFO [07-19|11:44:03.776] Allocated cache and file handles         database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [07-19|11:44:04.273] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain readonly=false
+INFO [07-19|11:44:04.273] Opened Era store                         datadir=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain/era
+ERROR[07-19|11:44:04.302] Head block is not reachable
+INFO [07-19|11:44:04.614] State schema set to default              scheme=path
+INFO [07-19|11:44:04.860] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/state readonly=false
+INFO [07-19|11:44:04.861] State snapshot generator is not found
+INFO [07-19|11:44:04.861] Starting snapshot generation             root=56e81f..63b421 accounts=0 slots=0 storage=0.00B dangling=0 elapsed="238.101µs"
+INFO [07-19|11:44:04.866] Initialized path database                triecache=16.00MiB statecache=16.00MiB buffer=64.00MiB history="last 90000 blocks"
+INFO [07-19|11:44:04.866] Resuming snapshot generation             root=56e81f..63b421 accounts=0 slots=0 storage=0.00B dangling=0 elapsed=4.819ms
+INFO [07-19|11:44:04.866] Writing custom genesis block
+INFO [07-19|11:44:04.868] Generated snapshot                       accounts=0 slots=0 storage=0.00B dangling=0 elapsed=6.679ms
+INFO [07-19|11:44:04.880] Successfully wrote genesis state         database=chaindata hash=f000f8..a09415
+🔑 Importing account...
+INFO [07-19|11:44:05.195] Maximum peer count                       ETH=50 total=50
+INFO [07-19|11:44:05.200] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Address: {90f8bf6a479f320ead074411a4b0e7944ea8c9c1}
+🚀 Starting blockchain...
+INFO [07-19|11:44:17.003] Maximum peer count                       ETH=50 total=50
+INFO [07-19|11:44:17.012] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [07-19|11:44:17.013] Option "allow-insecure-unlock" is deprecated and has no effect
+WARN [07-19|11:44:17.020] Option --miner.etherbase is deprecated as the etherbase is set by the consensus client post-merge
+WARN [07-19|11:44:17.020] The flag --mine is deprecated and will be removed
+INFO [07-19|11:44:17.023] Set global gas cap                       cap=50,000,000
+INFO [07-19|11:44:17.024] Initializing the KZG library             backend=gokzg
+INFO [07-19|11:44:17.025] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [07-19|11:44:17.025] Using pebble as the backing database
+INFO [07-19|11:44:17.026] Allocated cache and file handles         database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [07-19|11:44:17.298] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain readonly=false
+INFO [07-19|11:44:17.298] Opened Era store                         datadir=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain/era
+INFO [07-19|11:44:17.300] State scheme set to already existing     scheme=path
+ERROR[07-19|11:44:17.302] Geth only supports PoS networks. Please transition legacy networks using Geth v1.13.x.
+Fatal: Failed to register the Ethereum service: 'terminalTotalDifficulty' is not set in genesis block

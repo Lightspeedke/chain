@@ -1,0 +1,29 @@
+🦊 XYBERCHAIN - METAMASK SETUP
+==============================
+
+Network Configuration:
+----------------------
+Network Name: XYBERCHAIN
+New RPC URL: http://localhost:8545
+Chain ID: 9194
+Currency Symbol: XYB
+Block Explorer URL: (leave empty)
+
+Test Account:
+-------------
+Address: 0x90f8bf6a479f320ead074411a4b0e7944ea8c9c1
+Private Key: 4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d
+
+⚠️  IMPORTANT NOTES:
+- This is a LOCAL blockchain for testing only
+- The private key above is for testing - NEVER use in production
+- Make sure the blockchain is running before adding to MetaMask
+- You should see mining activity in the terminal
+
+🎯 STEPS:
+1. Start blockchain: ./start-final.sh
+2. Wait for "Successfully sealed new block" messages
+3. Add network to MetaMask with above settings
+4. Import the test account using the private key
+5. You should see a large balance of XYB tokens!
+

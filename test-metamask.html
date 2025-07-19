@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XYBERCHAIN MetaMask Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        button { padding: 10px 20px; margin: 10px; background: #0066cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .result { background: #f0f0f0; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>🚀 XYBERCHAIN MetaMask Test</h1>
+    
+    <button onclick="addNetwork()">Add XYBERCHAIN to MetaMask</button>
+    <button onclick="testConnection()">Test Connection</button>
+    <button onclick="getBalance()">Get Balance</button>
+    
+    <div id="result" class="result"></div>
+
+    <script>
+        async function addNetwork() {
+            try {
+                await ethereum.request({
+                    method: 'wallet_addEthereumChain',
+                    params: [{
+                        chainId: '0x23EA',
+                        chainName: 'XYBERCHAIN',
+                        nativeCurrency: {
+                            name: 'XYB',
+                            symbol: 'XYB',
+                            decimals: 18
+                        },
+                        rpcUrls: ['http://localhost:8545'],
+                        blockExplorerUrls: null
+                    }]
+                });
+                showResult('✅ XYBERCHAIN added to MetaMask!', 'success');
+            } catch (error) {
+                showResult('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        async function testConnection() {
+            try {
+                const chainId = await ethereum.request({ method: 'eth_chainId' });
+                const accounts = await ethereum.request({ method: 'eth_accounts' });
+                showResult(`✅ Connected! Chain ID: ${chainId} (${parseInt(chainId, 16)})\nAccounts: ${accounts.length}`, 'success');
+            } catch (error) {
+                showResult('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        async function getBalance() {
+            try {
+                const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                const balance = await ethereum.request({
+                    method: 'eth_getBalance',
+                    params: [accounts[0], 'latest']
+                });
+                const balanceInEth = parseInt(balance, 16) / Math.pow(10, 18);
+                showResult(`✅ Balance: ${balanceInEth} XYB\nAddress: ${accounts[0]}`, 'success');
+            } catch (error) {
+                showResult('❌ Error: ' + error.message, 'error');
+            }
+        }
+
+        function showResult(message, type) {
+            const result = document.getElementById('result');
+            result.textContent = message;
+            result.className = 'result ' + type;
+        }
+    </script>
+</body>
+</html>

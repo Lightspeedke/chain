@@ -1,0 +1,45 @@
+nohup: ignoring input
+🚀 Starting XYBERCHAIN with FORCED Chain ID
+===========================================
+Chain ID: 9194 (0x23EA)
+Network ID: 9194
+Port: 8545
+📦 Initializing blockchain with Chain ID 9194...
+INFO [07-19|11:28:39.108] Maximum peer count                       ETH=50 total=50
+INFO [07-19|11:28:39.124] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [07-19|11:28:39.176] Set global gas cap                       cap=50,000,000
+INFO [07-19|11:28:39.180] Initializing the KZG library             backend=gokzg
+INFO [07-19|11:28:39.201] Defaulting to pebble as the backing database
+INFO [07-19|11:28:39.201] Allocated cache and file handles         database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [07-19|11:28:39.576] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain readonly=false
+INFO [07-19|11:28:39.576] Opened Era store                         datadir=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain/era
+INFO [07-19|11:28:39.582] State schema set to default              scheme=path
+ERROR[07-19|11:28:39.600] Head block is not reachable
+INFO [07-19|11:28:39.985] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/state readonly=false
+INFO [07-19|11:28:39.986] State snapshot generator is not found
+INFO [07-19|11:28:39.986] Starting snapshot generation             root=56e81f..63b421 accounts=0 slots=0 storage=0.00B dangling=0 elapsed="143.4µs"
+INFO [07-19|11:28:39.990] Initialized path database                triecache=16.00MiB statecache=16.00MiB buffer=64.00MiB history="last 90000 blocks"
+INFO [07-19|11:28:39.991] Resuming snapshot generation             root=56e81f..63b421 accounts=0 slots=0 storage=0.00B dangling=0 elapsed=4.474ms
+INFO [07-19|11:28:39.991] Writing custom genesis block
+INFO [07-19|11:28:39.993] Generated snapshot                       accounts=0 slots=0 storage=0.00B dangling=0 elapsed=7.300ms
+INFO [07-19|11:28:40.008] Successfully wrote genesis state         database=chaindata hash=0dc36f..9d3776
+🔑 Importing account...
+Fatal: keyfile must be given as the only argument
+🚀 Starting Geth...
+INFO [07-19|11:28:41.337] Maximum peer count                       ETH=50 total=50
+INFO [07-19|11:28:41.350] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+WARN [07-19|11:28:41.351] Option "allow-insecure-unlock" is deprecated and has no effect
+WARN [07-19|11:28:41.368] Option --miner.etherbase is deprecated as the etherbase is set by the consensus client post-merge
+WARN [07-19|11:28:41.383] The flag --mine is deprecated and will be removed
+INFO [07-19|11:28:41.389] Enabling recording of key preimages since archive mode is used
+WARN [07-19|11:28:41.390] Disabled transaction unindexing for archive node
+INFO [07-19|11:28:41.392] Set global gas cap                       cap=50,000,000
+INFO [07-19|11:28:41.398] Initializing the KZG library             backend=gokzg
+INFO [07-19|11:28:41.412] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [07-19|11:28:41.413] Using pebble as the backing database
+INFO [07-19|11:28:41.413] Allocated cache and file handles         database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [07-19|11:28:41.968] Opened ancient database                  database=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain readonly=false
+INFO [07-19|11:28:41.968] Opened Era store                         datadir=/home/mbogw/xyberchain/railway-fixed/data/geth/chaindata/ancient/chain/era
+INFO [07-19|11:28:41.973] State scheme set to already existing     scheme=path
+ERROR[07-19|11:28:41.981] Geth only supports PoS networks. Please transition legacy networks using Geth v1.13.x.
+Fatal: Failed to register the Ethereum service: 'terminalTotalDifficulty' is not set in genesis block
