@@ -19,19 +19,15 @@ RUN wget -q https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.13
 
 # Copy files
 COPY genesis.json ./
-COPY start-railway.sh ./
+COPY start.sh ./
 
-# Create password file
+# Create password file and setup
 RUN echo "xyberchain-railway-2024" > password.txt && \
-    chmod +x ./start-railway.sh && \
+    chmod +x ./start.sh && \
     mkdir -p ./data
 
 # Expose port
 EXPOSE $PORT
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD curl -f http://localhost:${PORT:-8545} || exit 1
-
-# Start
-CMD ["./start-railway.sh"]
+# Start XYBERCHAIN
+CMD ["./start.sh"]

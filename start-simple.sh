@@ -7,20 +7,17 @@ PORT=${PORT:-8545}
 WS_PORT=$((PORT + 1))
 DATADIR="./data"
 
-echo "📡 Starting on port: $PORT"
+echo "📡 HTTP: $PORT | WebSocket: $WS_PORT"
 
-# Ensure data directory exists
 mkdir -p $DATADIR
 
-# Initialize if needed
 if [ ! -d "$DATADIR/geth" ]; then
     echo "📦 Initializing..."
     ./geth --datadir $DATADIR init genesis.json
 fi
 
-echo "🚀 Starting XYBERCHAIN (no mining)..."
+echo "🚀 Starting XYBERCHAIN (Transaction Ready)..."
 
-# Start without mining first (more stable)
 exec ./geth --datadir $DATADIR \
     --networkid 9194 \
     --http \
@@ -37,4 +34,6 @@ exec ./geth --datadir $DATADIR \
     --nodiscover \
     --maxpeers 0 \
     --verbosity 2 \
-    --cache 128
+    --cache 128 \
+    --txpool.globalslots 4096 \
+    --txpool.globalqueue 1024
